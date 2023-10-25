@@ -15,9 +15,12 @@ on:
   push:
     branches:
       - master
+      - checkspell2-test
     tags:
       - v*
   pull_request:
+    branches:
+      - checkspell2-test
     types: [ labeled ]
 
 jobs:
